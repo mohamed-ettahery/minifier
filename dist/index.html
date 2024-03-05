@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Files Minify</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!--start navbar--><nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="#">Minif(y/i)Le</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="navbar-nav ml-auto">
+<h6 class="nav-title">Html & CSS & JavaScript minifier</h6>
+</div>
+</div>
+  </body>
+</html></nav>
+<!--end Navbar-->
+<!--Test comment-->
+<div class="container body-content">
+  <p class="desc-body-content">Make your website smaller and faster to load</p>
+  <div class="row"> 
+    <div class="col-12"> 
+      <ul class="list-unstyled list-choice-lang"> 
+        <li class="lang-selected">HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul><span class="span-skip-comments">Skip Comments :</span>
+      <button id="allow-comment"></button>
+    </div>
+    <div class="col-md-6"> 
+      <h3 class="box-header-title">Input</h3>
+      <!--Test comment2-->
+      <div class="box-input">
+        <div class="row">
+          <div class="col-12">
+            <p class="notice-minify-box">Put your Code here please and after that Click at Minify !<span class="close-notice-minify-box">X</span></p><span class="minify-notice">Successful minify!   </span>
+            <textarea id="input" cols="30" rows="10" placeholder="paste your code here"> </textarea>
+          </div>
+          <div class="col-12">  
+            <button class="btn btn-success btn-block" id="btn-minify">Minify </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6"> 
+      <h3 class="box-header-title">Output</h3>
+      <div class="box-output">
+        <div class="row">
+          <div class="col-12"><span class="selected-notice">Text Selected!</span>
+            <input type="text" id="output">
+          </div>
+          <div class="col-12 box-btn-select">  
+            <button class="btn btn-primary btn-block" id="btn-select">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p>Minif(y/i)Le copyright&copy;<span id="copy-year"></span></p>
+</footer>
+<script src="http://localhost:35729/livereload.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>

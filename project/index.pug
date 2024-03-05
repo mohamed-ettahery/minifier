@@ -1,0 +1,59 @@
+doctype html
+html
+ head
+  title Files Minify
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+  include styles.pug
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+ body
+  //start navbar
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Minif(y/i)Le</a>
+  //- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  //-   <span class="navbar-toggler-icon"></span>
+  //- </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav ml-auto">
+     <h6 class="nav-title">Html & CSS & JavaScript minifier</h6>
+    </div>
+  </div>
+</nav>
+  //end Navbar
+  //Test comment
+  div(class="container body-content")
+   p.desc-body-content Make your website smaller and faster to load
+   .row 
+    .col-12 
+     ul(class="list-unstyled list-choice-lang") 
+      li.lang-selected HTML
+      li CSS
+      li JavaScript
+     span.span-skip-comments Skip Comments :
+     button#allow-comment
+    .col-md-6 
+     h3.box-header-title Input
+     //Test comment2
+     .box-input
+      .row
+       .col-12
+        p.notice-minify-box Put your Code here please and after that Click at Minify !
+         span.close-notice-minify-box X
+        span.minify-notice Successful minify!   
+        textarea(id="input", cols="30", rows="10",placeholder="paste your code here") 
+       .col-12   
+        button(id="btn-minify",class="btn btn-success btn-block") Minify 
+    .col-md-6 
+     h3.box-header-title Output
+     .box-output
+      .row
+       .col-12
+        span.selected-notice Text Selected!
+        input(type="text",id="output")
+       div(class="col-12 box-btn-select")   
+        button(id="btn-select",class="btn btn-primary btn-block") Select
+  footer
+   p Minif(y/i)Le copyright&copy;
+    span#copy-year
+  include scripts.pug
